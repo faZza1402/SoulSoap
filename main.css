@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.wrap-header{
+	width: 100%;
+	height: 125px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #3E2E2D;
+}
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 1200px;
+}
+
+.logo{
+	display: flex;
+	align-items: center;
+	width: 153px;
+}
+
+.header-center{
+	width: 580px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 15px;
+}
+
+.search {
+	display: flex;
+	margin: 0 auto 0 auto;
+	align-items: center;
+	justify-content: space-between;
+	width: 526px;
+	height: 40px;
+	background: rgba(141, 91, 75, 0.7);
+	border: 2px solid #8D5B4B;
+	border-radius: 3px;
+}
+
+.input-img{
+	display: flex;
+	margin: 0 11px;
+}
+
+.search-input {
+  	width: 90%;
+  	border: none;
+  	outline: none;
+ 	background: none; 
+  	color: #FFFFFF;
+  	font-size: 12px;
+}
+
+.search-input::placeholder {
+  	color: #BB8F69;
+  	opacity: 0.8;
+}
+
+.search-btn{
+	display: flex;
+	margin-left: 11px;
+	margin-right: 5px;
+	align-items: center;
+	justify-content: center;
+	width: 80px;
+	height: 32px;
+	border: none;
+	border-radius: 3px;
+	background-color: #8D5B4B;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+nav ul{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	list-style-type: none;
+}
+
+nav ul li{
+	position: relative;
+	padding-left: 20px;
+}
+
+nav ul li::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 13px;
+	height: 13px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.main::before{
+	background-image: url('Main_images/main.svg');
+}
+
+.about::before{
+	background-image: url('Main_images/about.svg');
+}
+
+.delivery::before{
+	background-image: url('Main_images/delivery.svg');
+}
+
+.comments::before{
+	background-image: url('Main_images/comments.svg');
+}
+
+.contacts::before{
+	background-image: url('Main_images/contacts.svg');
+}
+
+nav ul li a{
+	color: #FFFFFF;
+	font-size: 12px;
+}
+
+nav ul li a:hover{
+	color: #BB8F69;
+}
+
+.button-group{
+	width: 160px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.catalogue{
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+	align-items: center;
+	justify-content: center;
+}
+
+.catalogue img{
+	width: 32px;
+	height: 32px;
+}
+
+.catalogue span{
+	color: white;
+	font-size: 12px;
+}
+
+.account{
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+	align-items: center;
+	justify-content: center;
+}
+
+.account img{
+	width: 32px;
+	height: 32px;
+}
+
+.account span{
+	color: white;
+	font-size: 12px;
+}
+
+.cart{
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+	align-items: center;
+	justify-content: center;
+}
+
+.cart img{
+	width: 32px;
+	height: 32px;
+}
+
+.cart span{
+	color: white;
+	font-size: 12px;
+}
+
+.catalogue:hover span,
+.account:hover span,
+.cart:hover span{
+	color: #BB8F69;
+}
+
+.hero-container{
+	width: 1200px;
+	height: 810px;
+	display: flex;
+	margin: 0 auto 0 auto;
+	align-items: center;
+	justify-content: space-between;
+	background-image: url('Main_images/hero-background.svg');
+}
+
+.hero-info{
+	width: 600px;
+	height: 643px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.hero-info h1{
+	text-align: center;
+	font-size: 48px;
+	font-weight: 500;
+}
+
+.hero-info p{
+	text-align: center;
+	font-size: 28px;
+}
+
+.hero-info button{
+	width: 521px;
+	height: 80px;
+	border: none;
+	border-radius: 55px;
+	background-color: #8D5B4B;
+	color: white;
+	font-size: 40px;
+	margin: 0 auto 0 auto;
+	cursor: pointer;
+}
+
+.hero-info button:hover{
+	background-color: #3E2E2D;
+}
+
+.hero-container img{
+	width: 568px;
+	height: 643px;
+	border-radius: 3px;
+	border: none;
+}
