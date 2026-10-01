@@ -26,11 +26,11 @@
 	
 				<nav>
 					<ul>
-						<li class="main"><a href="#">Главная</a></li>
-						<li class="about"><a href="#">О нас</a></li>
-						<li class="delivery"><a href="#">Доставка и оплата</a></li>
-						<li class="comments"><a href="#">Отзывы</a></li>
-						<li class="contacts"><a href="#">Контакты</a></li>
+						<li class="main"><a href="#main">Главная</a></li>
+						<li class="about"><a href="#about_us">О нас</a></li>
+						<li class="delivery"><a href="#delivery">Доставка и оплата</a></li>
+						<li class="comments"><a href="#reviews">Отзывы</a></li>
+						<li class="contacts"><a href="#contacts">Контакты</a></li>
 					</ul>
 				</nav>
 
@@ -57,7 +57,7 @@
 
 	</div>
 
-	<div class="white-container">
+	<div class="white-container" id="main">
 
 		<div class="hero-info">
 
@@ -78,7 +78,7 @@
 		<img src="Main_images/hero_image.jpg" alt="">
 	</div>
 
-	<div class="beige-container">
+	<div class="beige-container" id="about_us">
 
 		<div class="about-us">
 	
@@ -131,7 +131,7 @@
 
 	</div>
 
-	<div class="white-container">
+	<div class="white-container" id="delivery">
 		<div class="delivery_payment">
 
 			<div class="delivery-container">
@@ -170,6 +170,63 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="beige-container" id="reviews">
+
+		<div class="reviews-container">
+			
+			<h1>Отзывы</h1>
+
+			<div class="review">
+
+				<div class="review-ava"></div>
+				<div class="review-text-cont">
+					<p>Пример текста</p>
+					<div class="review-info">
+						<p>Имя пользователя - ? года назад - </p>
+						<button>&nbsp;Ответить</button>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="review-beige">
+
+				<div class="review-ava"></div>
+				<div class="review-text-cont">
+					<p>Пример текста</p>	
+					<div class="review-info">
+						<p>Имя пользователя - ? года назад - </p>
+						<button>&nbsp;Ответить</button>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="review">
+				
+				<div class="review-ava"></div>
+				<div class="review-text-cont">
+					<p>Пример текста</p>	
+					<div class="review-info">
+						<p>Имя пользователя - ? года назад - </p>
+						<button>&nbsp;Ответить</button>
+					</div>
+				</div>
+			</div>
+
+			<button class="show-review">Показать ещё</button> 
+
+			<div class="user-review">
+				<div class="review-ava"></div>
+				<div class="review-text-cont">
+					<input class="review-input" type="text" placeholder="Оставить отзыв...">
+					<button></button>
+				</div>
+			</div>
+
+		</div>
+	</div>	
 </body>
 
 </html>

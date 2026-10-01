@@ -232,6 +232,10 @@ nav ul li a:hover{
 	color: #BB8F69;
 }
 
+#main, #about_us, #delivery, #reviews, #contacts{
+	scroll-margin-top: 127px;
+}
+
 .white-container{
 	width: 1200px;
 	height: 810px;
@@ -464,4 +468,140 @@ nav ul li a:hover{
 .payment-info p{
 	font-size: 28px;
 	text-align: right;
+}
+
+.reviews-container{
+	width: 1200px;
+	height: 810px;
+	margin: 0 auto 0 auto;
+	background-image: url("Main_images/background_white.svg");
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.reviews-container h1{
+	margin-top: 50px;
+	font-size: 48px;
+	font-weight: 500;
+}
+
+.review{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.review-ava{
+	width: 115px;
+	height: 115px;
+	background-color: rgb(141, 91, 75, 0.5);
+	background-image: url('Main_images/account.svg');
+	background-repeat: no-repeat;
+	background-size: 80% 80%;
+	background-position: center;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.review-text-cont{
+	display: flex;
+	width: 1040px;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 10px;
+	background-color: rgb(141, 91, 75, 0.5);
+	border-radius: 5px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.review p{
+	font-size: 18px;
+}
+
+.review-info{
+	display: flex;
+}
+
+.review-info p{
+	font-size: 16px;
+	color: #8D5B4B;
+}
+
+.review-info button{
+	background-color: transparent;
+	border: none;
+	color: #FFFFFF;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.review-info button:hover{
+	color: #8D5B4B;
+}
+
+.review-beige{
+	display: flex;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.review-beige .review-ava{
+	background-color: rgb(209, 187, 144, 0.5);
+}
+
+.review-beige .review-text-cont{
+	background-color: rgb(209, 187, 144, 0.5);
+}
+
+.show-review{
+	width: 273px;
+	height: 57px;
+	margin: 0 auto 0 auto;
+	border-radius: 50px;
+	background-color: #8D5B4B;
+	border: none;
+	color: #FFFFFF;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.show-review:hover{
+	background-color: #3E2E2D;
+}
+
+.user-review{
+	display: flex;
+	margin-bottom: 50px;
+	justify-content: space-between;
+}
+
+.user-review .review-text-cont{
+	background-color: #FFFFFF;
+}
+
+.review-input{
+	background-color: transparent;
+	border: none;
+	font-size: 18px;
+}
+
+.user-review .review-text-cont button{
+	background-color: #8D5B4B;
+	border: none;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	margin: 0 0 0 auto;
+	background-image: url('Main_images/arrow.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 60% 60%;
+	transform: scaleX(-1);
+	cursor: pointer;
+}
+
+.user-review .review-text-cont button:hover{
+	background-color: #3E2E2D;
 }
