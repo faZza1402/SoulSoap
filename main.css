@@ -508,6 +508,9 @@ nav ul li a:hover{
 	display: flex;
 	width: 1040px;
 	flex-direction: column;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	justify-content: space-between;
 	padding: 10px;
 	background-color: rgb(141, 91, 75, 0.5);
@@ -604,4 +607,66 @@ nav ul li a:hover{
 
 .user-review .review-text-cont button:hover{
 	background-color: #3E2E2D;
+}
+
+.footer{
+	background-color: #3E2E2D;
+}
+
+.contacts-container{
+	width: 1000px;
+	margin: 0 auto 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contacts-container h1{
+	font-size: 38px;
+	font-weight: 500;
+	color: #FFFFFF;
+}
+
+.cont-wrap{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.left-side{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+}
+
+.contact-ico{
+	width: 170px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.right-side{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 20px;
+}
+
+.right-side p{
+	text-align: right;
+	color: #FFFFFF;
+	font-size: 18px;
+}
+
+.decoration{
+	width: 100%;
+	height: 1px;
+	background-color: #FFFFFF;
+	margin: 10px;
+}
+
+.fazza{
+	color: #FFFFFF;
+	margin-bottom: 10px;
 }
