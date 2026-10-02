@@ -316,19 +316,20 @@ nav ul li a:hover{
 
 .about-us-images{
 	position: relative;
-	width: 100%;
+	width: 432px;
 	height: 550px;
 	overflow: hidden;
+	display: flex;
+	border-radius: 10px;
 }
 
 .about-us-images img{
-	position: absolute;
-	width: 100%;
-	height: 550px;
-	border-radius: 10px;
-	opacity: 0;
-	transform: translateX(50px);
-	transition: opacity 0.4 ease, transform 0.4 ease;
+	min-width: 432px;
+	width: 432px;
+	height: 100%;
+	flex-shrink: 0;
+	object-fit: cover;
+	transition: transform 0.4s ease-in-out;
 }
 
 .circle-container{
@@ -348,11 +349,6 @@ nav ul li a:hover{
 
 .circle.active{
 	background-color: #3E2E2D;
-}
-
-.about-us-images .active{
-	opacity: 1;
-	transform: translateX(0);
 }
 
 .controlers{
@@ -436,7 +432,7 @@ nav ul li a:hover{
 }
 
 .delivery-info p{
-	font-size: 28px;`
+	font-size: 28px;
 }
 
 .delivery-container img{
@@ -495,7 +491,7 @@ nav ul li a:hover{
 .review-ava{
 	width: 115px;
 	height: 115px;
-	background-color: rgb(141, 91, 75, 0.5);
+	background-color: rgba(141, 91, 75, 0.5);
 	background-image: url('Main_images/account.svg');
 	background-repeat: no-repeat;
 	background-size: 80% 80%;
@@ -508,12 +504,9 @@ nav ul li a:hover{
 	display: flex;
 	width: 1040px;
 	flex-direction: column;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 	justify-content: space-between;
 	padding: 10px;
-	background-color: rgb(141, 91, 75, 0.5);
+	background-color: rgba(141, 91, 75, 0.5);
 	border-radius: 5px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -551,11 +544,11 @@ nav ul li a:hover{
 }
 
 .review-beige .review-ava{
-	background-color: rgb(209, 187, 144, 0.5);
+	background-color: rgba(209, 187, 144, 0.5);
 }
 
 .review-beige .review-text-cont{
-	background-color: rgb(209, 187, 144, 0.5);
+	background-color: rgba(209, 187, 144, 0.5);
 }
 
 .show-review{
