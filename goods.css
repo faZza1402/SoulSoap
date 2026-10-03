@@ -105,7 +105,7 @@ a{
 .search-n-filtering{
 	display: flex;
 	gap: 28px;
-	margin: 25px auto;
+	margin: 50px auto;
 }
 
 .filter{
@@ -130,6 +130,10 @@ a{
 	transform: rotate(-90deg);
 	width: 24px;
 	height: 14px;
+}
+
+.filter:hover{
+	background-color: #3E2E2D;
 }
 
 .search{
@@ -165,8 +169,83 @@ a{
 	border-radius: 3px;
 	color: white;
 	font-size: 14px;
+	cursor: pointer;
 }
 
+.input-btn:hover{
+	background-color: #3E2E2D;
+}
+
+.goods{
+	display: grid;
+	gap: 25px;
+	row-gap: 50px;
+	grid-template-columns: repeat(3, 1fr);
+	padding-bottom: 50px;
+	margin: 0 auto;
+}
+
+.goods-cards{
+	width: 368px;
+	height: 530px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.goods-cards img{
+	width: 100%;
+	border-radius: 3px;
+}
+
+.goods-title{
+	color: #3E2E2D;
+	font-size: 25px;
+}
+
+.goods-price{
+	color: #8D5B4B;
+	font-size: 25px;
+}
+
+.goods-btn{
+	display: flex;
+	justify-content: space-between;
+}
+
+.show-more{
+	width: 178px;
+	height: 53px;
+	color: #8D5B4B;
+	background-color: white;
+	border: 3px solid #8D5B4B;
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.show-more:hover{
+	border-color: #3E2E2D;
+	color: #3E2E2D;
+}
+
+.add-btn{
+	width: 178px;
+	height: 53px;
+	background-color: #8D5B4B;
+	color: white;
+	border: 3px solid #8D5B4B;
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.add-btn:hover{
+	background-color: #3E2E2D;
+	border-color: #3E2E2D;
+}
 
 .footer{
 	width: 100%;
