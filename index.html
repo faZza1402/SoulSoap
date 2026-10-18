@@ -8,8 +8,9 @@
 </head>
 
 <body>
+	
 	<div class="wrap-header">
-		<header class="container">
+		<header class="container" id="header">
 		
 			<a class="logo" href="#">
 				<img src="Main_images/logo.svg" alt="">
@@ -45,24 +46,39 @@
 					</button>
 				</a>
 				
-				<a href="#">
+				<a href="cart.html">
 					<button class="cart">
 						<img src="Main_images/cart.svg" alt="">
 						<span>Корзина</span>
 					</button>
 				</a>
 				
-				<a href="#">
-					<button class="account">
-						<img src="Main_images/account.svg" alt="">
-						<span>Аккаунт</span>
-					</button>
-				</a>
+				<button class="account" id="open-login-form">
+					<img src="Main_images/account.svg" alt="">
+					<span>Аккаунт</span>
+				</button>
 
 			</div>
 
 		</header>
 
+	</div>
+
+	<div class="login-form" id="login-form">
+
+		<div class="login-container">
+
+			<a href="#header" class="close-btn" id="close-btn">&times;</a>
+
+			<h1>Вход</h1>
+
+			<form class="ident-form">
+				<input type="text" placeholder="Логин">
+				<input type="text" placeholder="Пароль">
+				<button class="form-btn" type="submit">Войти</button>
+				<button class="form-btn">Регистрация</button>
+			</form>
+		</div>
 	</div>
 
 	<div class="white-container" id="main">

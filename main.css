@@ -10,6 +10,10 @@ body {
 	font-weight: 500;
 }
 
+body .account-open{
+	overflow: hidden;
+}
+
 a {
 	text-decoration: none;
 }
@@ -80,6 +84,7 @@ img {
 .search-input::placeholder {
   	color: #BB8F69;
   	opacity: 0.8;
+	transition: all 0.5s ease 0s;
 }
 
 .search-btn{
@@ -102,6 +107,7 @@ nav ul{
 	width: 100%;
 	justify-content: space-between;
 	list-style-type: none;
+	transition: all 0.5s ease 0s;
 }
 
 nav ul li{
@@ -240,11 +246,90 @@ nav ul li a:hover{
 	scroll-margin-top: 127px;
 }
 
+.login-form{
+	display: none;
+}
+
+.login-form.active{
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	background-color: #ffffff8b;
+	z-index: 1050;
+	width: 100%;
+}
+
+.login-container{
+	display: flex;
+	flex-direction: column;
+	padding: 0 13px 25px 13px;
+	width: 570px;
+	background-color: #cca78b;
+	border-radius: 5px;
+	box-shadow: 8px 3px 10px 3px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn{
+	margin-left: auto;
+	font-size: 30px;
+	color: #F9E8C6;
+}
+
+.close-btn:hover{
+	color: #3E2E2D;
+}
+
+.login-container h1{
+	font-size: 30px;
+	color: #3E2E2D;
+	font-weight: 500;
+	text-align: center;
+}
+
+.ident-form{
+	display: flex;
+	flex-direction: column;
+}
+
+.ident-form input{
+	margin: 7px auto;
+	width: 380px;
+	height: 50px;
+	padding: 0 13px;
+	border: none;
+	color: #D4AE8C;
+	font-size: 18px;
+	border-radius: 5px;
+	background-color: #AC7F5E;
+	box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+.form-btn{
+	width: 250px;
+	height: 50px;
+	background-color: #8D5B4B;
+	border-radius: 50px;
+	border: none;
+	color: #FFFFFF;
+	font-size:  18px;
+	margin: 7px auto;
+	box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+.form-btn:hover{
+	background-color: #3E2E2D;
+}
+
 .white-container{
 	width: 1200px;
 	height: 810px;
 	display: flex;
-	margin: 0 auto 0 auto;
+	margin: 0 auto;
 	align-items: center;
 	justify-content: space-between;
 	background-image: url('Main_images/background_beige.svg');

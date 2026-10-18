@@ -53,3 +53,32 @@ controlers.forEach((btn) => {
 });
 
 show(imageIndex);
+
+const openLoginForm = document.getElementById('open-login-form');
+const closeLoginForm = document.getElementById('close-btn');
+const contentLoginForm = document.getElementById('login-form');
+const body = document.body;
+
+openLoginForm.addEventListener('click', () => {
+	
+	contentLoginForm.classList.add('active');
+	body.classList.add('account-open');
+
+});
+
+closeLoginForm.addEventListener('click', closeModal);
+
+contentLoginForm.addEventListener('click', (e) => {
+
+	if (e.target === contentLoginForm) closeModal();
+
+});
+
+function closeModal(){
+	
+	contentLoginForm.classList.remove('active');
+	body.classList.remove('account-open');
+
+};
+
+
