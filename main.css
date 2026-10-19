@@ -247,11 +247,10 @@ nav ul li a:hover{
 }
 
 .login-form{
-	display: none;
-}
-
-.login-form.active{
 	display: flex;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.4s ease, visibility 0.4 ease;
 	height: 100%;
 	align-items: center;
 	justify-content: center;
@@ -263,6 +262,11 @@ nav ul li a:hover{
 	width: 100%;
 }
 
+.login-form.active{
+	opacity: 1;
+	visibility: visible;
+}
+
 .login-container{
 	display: flex;
 	flex-direction: column;
@@ -271,6 +275,14 @@ nav ul li a:hover{
 	background-color: #cca78b;
 	border-radius: 5px;
 	box-shadow: 8px 3px 10px 3px rgba(0, 0, 0, 0.3);
+	opacity: 0;
+	transform: translateY(-60px);
+	transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.4s ease;
+}
+
+.login-container.active{
+	opacity: 1;
+	transform: translateY(0);
 }
 
 .close-btn{
@@ -306,6 +318,7 @@ nav ul li a:hover{
 	border-radius: 5px;
 	background-color: #AC7F5E;
 	box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.3);
+	outline: none;
 }
 
 .form-btn{
@@ -323,6 +336,77 @@ nav ul li a:hover{
 
 .form-btn:hover{
 	background-color: #3E2E2D;
+}
+
+.reg-form{
+	display: flex;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.4s ease, visibility 0.4 ease;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	background-color: #ffffff8b;
+	z-index: 1050;
+	width: 100%;
+}
+
+.reg-form.active{
+	opacity: 1;
+	visibility: visible;
+}
+
+
+.reg{
+	display: flex;
+	flex-direction: column;
+	padding: 0 13px 25px 13px;
+	width: 570px;
+	background-color: #cca78b;
+	border-radius: 5px;
+	box-shadow: 8px 3px 10px 3px rgba(0, 0, 0, 0.3);
+	opacity: 0;
+	transform: translateY(-60px);
+	transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.4s ease;
+}
+
+.reg.active{
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.reg h1{
+	font-size: 30px;
+	color: #3E2E2D;
+	font-weight: 500;
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.reg-input{
+	display: flex;
+	flex-direction: column;
+}
+
+.reg-input input{
+	margin: 7px auto;
+	width: 380px;
+	height: 50px;
+	padding: 0 13px;
+	border: none;
+	color: #D4AE8C;
+	font-size: 18px;
+	border-radius: 5px;
+	background-color: #AC7F5E;
+	box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.3);
+	outline: none;
+}
+
+.reg button{
+	margin-top: 28px;
 }
 
 .white-container{

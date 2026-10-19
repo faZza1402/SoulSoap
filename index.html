@@ -9,8 +9,8 @@
 
 <body>
 	
-	<div class="wrap-header">
-		<header class="container" id="header">
+	<div class="wrap-header" id="header">
+		<header class="container">
 		
 			<a class="logo" href="#">
 				<img src="Main_images/logo.svg" alt="">
@@ -66,7 +66,7 @@
 
 	<div class="login-form" id="login-form">
 
-		<div class="login-container">
+		<div class="login-container" id="login-container">
 
 			<a href="#header" class="close-btn" id="close-btn">&times;</a>
 
@@ -76,9 +76,28 @@
 				<input type="text" placeholder="Логин">
 				<input type="text" placeholder="Пароль">
 				<button class="form-btn" type="submit">Войти</button>
-				<button class="form-btn">Регистрация</button>
+				<button class="form-btn" id="reg-open">Регистрация</button>
 			</form>
 		</div>
+	</div>
+
+	<div class="reg-form" id="reg-form">
+
+		<div class="reg" id="reg">
+
+			<a href="#header" class="close-btn" id="reg-close-btn">&times;</a>
+
+			<h1>Регистрация</h1>
+
+			<form class="reg-input">
+				<input type="text" placeholder="ФИО" required>
+				<input type="text" placeholder="E-mail" required>
+				<input type="text" placeholder="Пароль" required>
+				<input type="text" placeholder="Повтор. пароль" required>
+				<button class="form-btn" type="submit">Зарегистрироваться</button>
+			</form>
+
+		</div>	
 	</div>
 
 	<div class="white-container" id="main">

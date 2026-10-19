@@ -57,11 +57,13 @@ show(imageIndex);
 const openLoginForm = document.getElementById('open-login-form');
 const closeLoginForm = document.getElementById('close-btn');
 const contentLoginForm = document.getElementById('login-form');
+const loginForm = document.getElementById('login-container');
 const body = document.body;
 
 openLoginForm.addEventListener('click', () => {
 	
 	contentLoginForm.classList.add('active');
+	loginForm.classList.add('active');
 	body.classList.add('account-open');
 
 });
@@ -74,11 +76,37 @@ contentLoginForm.addEventListener('click', (e) => {
 
 });
 
+const regForm = document.getElementById('reg-form');
+const openRegForm = document.getElementById('reg-open');
+const contentRegForm = document.getElementById('reg');
+const closeReg = document.getElementById('reg-close-btn');
+
 function closeModal(){
 	
 	contentLoginForm.classList.remove('active');
+	loginForm.classList.remove('active');
 	body.classList.remove('account-open');
+
+	contentRegForm.classList.remove('active');
+	regForm.classList.remove('active');
 
 };
 
+openRegForm.addEventListener('click', () => {
+	
+	contentLoginForm.classList.remove('active');
+	loginForm.classList.remove('active');
+	
+	regForm.classList.add('active');
+	contentRegForm.classList.add('active');
+	
+});
+
+regForm.addEventListener('click', (e) => {
+
+	if (e.target === regForm) closeModal();
+
+});
+
+closeReg.addEventListener('click', closeModal);
 
