@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css3?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 html{
 	box-sizing: border-box;
@@ -92,6 +92,114 @@ a{
 
 .header-btn:hover span{
 	color: #BB8F69;
+}
+
+.account-wrap,
+.reg-wrap{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	background-color: #ffffff8b;
+	z-index: 1050;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.4s ease, visibility 0.4 ease;
+}
+
+.account-wrap.active,
+.reg-wrap.active{
+	opacity: 1;
+	visibility: visible;
+}
+
+.account-content,
+.reg-content{
+	width: 596px;
+	border-radius: 5px;
+	background-color: #cca78b;
+	display: flex;
+	flex-direction: column;
+	padding: 0 13px;
+	box-shadow: 8px 3px 10px 3px rgba(0, 0, 0, 0.3);
+	transform: translateY(-60px);
+	transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.4s ease;
+	opacity: 0;
+}
+
+.account-content.active,
+.reg-content.active{
+	transform: translate(0);
+	opacity: 1;
+}
+
+.close{
+	font-size: 30px;
+	color: #f9e8c6;
+	text-align: right;
+}
+
+.close:hover{
+	color: #3e2e2d;
+}
+
+.acc-title{
+	color: #3e2e2d;
+	font-size: 30px;
+	text-align: center;
+	font-weight: 500;
+}
+
+.account-form,
+.reg-form{
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 25px;
+}
+
+.reg-form{
+	margin-top: 15px;
+}
+
+.account-input{
+	margin: 7px auto;
+	width: 406px;
+	height: 50px;
+	background-color: #ac7f5e;
+	padding: 0 13px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	color: #d4ae8c;
+	box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.3);
+	font-size: 18px;
+}
+
+.account-btn,
+.reg-btn{
+	width: 250px;
+	height: 50px;
+	background-color: #8d5b4b;
+	border: none;
+	border-radius: 50px;
+	margin: 7px auto;
+	box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.3);
+	color: white;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.reg-btn{
+	margin-top: 25px;
+}
+
+.account-btn:hover,
+.reg-btn:hover{
+	background-color: #3e2e2d;
 }
 
 .main{

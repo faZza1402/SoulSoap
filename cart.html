@@ -62,7 +62,7 @@
 					</a>
 
 					<a href="#">
-						<div class="header-btn">
+						<div class="header-btn account-open">
 							<img src="Main_images/account.svg" alt="">
 							<span>Войти</span>
 						</div>
@@ -71,7 +71,61 @@
 			</div>
 		</header>
 
+		<div class="account-wrap">
+
+			<div class="account-content">
+
+				<a href="#header" class="close">&times</a>
+
+				<h1 class="acc-title">Вход</h1>
+
+				<form class="account-form">
+
+					<input type="text" placeholder="Логин" class="account-input" required>
+					<input type="text" placeholder="Пароль" class="account-input" required>
+
+					<button type="submit" class="account-btn">Войти</button>
+					<button type="button" class="account-btn reg-open">Регистрация</button>
+				
+				</form>
+
+			</div>
+
+		</div>
+
+		<div class="reg-wrap">
+		
+			<div class="reg-content">
+
+				<a href="#header" class="close">&times</a>
+
+				<h1 class="acc-title">Регистрация</h1>
+
+				<form class="reg-form">
+
+					<input type="text" placeholder="ФИО" class="account-input" required>
+					<input type="text" placeholder="E-mail" class="account-input" required>
+					<input type="text" placeholder="Пароль" class="account-input" required>
+					<input type="text" placeholder="Повтор. пароль" class="account-input" required>
+
+					<button type="submit" class="reg-btn">Зарегистрироваться</button>
+			
+				</form>
+
+			</div>
+
+		</div>
+
 		<main class="main">
+
+			<div class="empty-cart">
+				<h1>Ваша корзина пуста</h1>
+				<img src="Main_images/empty_cart.svg" alt="">
+				<p>Загляните в каталог,<br> там много интересного</p>
+				<a href="goods.html">
+					<button class="place-an-order">Сделать заказ</button>
+				</a>
+			</div>
 			
 		</main>
 
@@ -107,6 +161,9 @@
 		</footer>
 
 	</div>
+
+<script src="cart.js"></script>
+
 </body>
 
 </html>

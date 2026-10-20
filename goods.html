@@ -28,7 +28,7 @@
 				</nav>
 
 				<div class="header-button-group">
-					<a href="#">
+					<a href="cart.html">
 						<div class="header-btn">
 							<img src="Main_images/cart.svg" alt="">
 							<span>Корзина</span>
@@ -36,7 +36,7 @@
 					</a>
 
 					<a href="#">
-						<div class="header-btn">
+						<div class="header-btn account-open">
 							<img src="Main_images/account.svg" alt="">
 							<span>Войти</span>
 						</div>
@@ -44,6 +44,51 @@
 				</div>
 			</div>
 		</header>
+
+		<div class="account-wrap">
+
+			<div class="account-content">
+
+				<a href="#header" class="close">&times</a>
+
+				<h1 class="acc-title">Вход</h1>
+
+				<form class="account-form">
+
+					<input type="text" placeholder="Логин" class="account-input" required>
+					<input type="text" placeholder="Пароль" class="account-input" required>
+
+					<button type="submit" class="account-btn">Войти</button>
+					<button type="button" class="account-btn reg-open">Регистрация</button>
+				
+				</form>
+
+			</div>
+
+		</div>
+
+		<div class="reg-wrap">
+		
+			<div class="reg-content">
+
+				<a href="#header" class="close">&times</a>
+
+				<h1 class="acc-title">Регистрация</h1>
+
+				<form class="reg-form">
+
+					<input type="text" placeholder="ФИО" class="account-input" required>
+					<input type="text" placeholder="E-mail" class="account-input" required>
+					<input type="text" placeholder="Пароль" class="account-input" required>
+					<input type="text" placeholder="Повтор. пароль" class="account-input" required>
+
+					<button type="submit" class="reg-btn">Зарегистрироваться</button>
+			
+				</form>
+
+			</div>
+
+		</div>
 
 		<main class="main">
 			<div class="search-n-filtering">
@@ -176,6 +221,9 @@
 		</footer>
 
 	</div>
+
+<script src="goods.js"></script>
+
 </body>
 
 </html>
